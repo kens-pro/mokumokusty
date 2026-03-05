@@ -906,14 +906,21 @@
       <div class="support-layout">
         <div class="support-img-wrap reveal">
           <div class="support-accent"></div>
-          <iframe
-            src="https://player.vimeo.com/video/YOUR_VIMEO_ID?autoplay=1&loop=1&muted=1&background=1&playsinline=1"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowfullscreen
-            style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;"
-            title="刺し子どり サポート動画"
-          ></iframe>
+          <!-- YouTubeショート動画埋め込み（リピート再生・左右幅狭め） -->
+          <div style="width:100%;height:100%;display:flex;justify-content:center;align-items:center;">
+            <div style="max-width:340px;width:100%;aspect-ratio:9/16;position:relative;">
+              <iframe
+                width="100%" height="100%"
+                src="https://www.youtube.com/embed/tUWVcIiuI64?autoplay=1&loop=1&playlist=tUWVcIiuI64&mute=1"
+                title="刺し子どり サポート動画"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+                style="width:100%;height:100%;border-radius:18px;box-shadow:0 6px 24px rgba(60,40,20,.07);background:#000;object-fit:cover;"
+              ></iframe>
+              <div style="position:absolute;bottom:10px;left:0;width:100%;text-align:center;font-size:0.95em;color:var(--muted);background:rgba(255,255,255,.7);padding:4px 0;">動画はリピート再生されます</div>
+            </div>
+          </div>
         </div>
         <div class="support-text reveal">
           <div class="s-head">
@@ -1063,6 +1070,11 @@
         <div class="kit-image-stack reveal">
           <div class="kit-img"><img src="images/IMG_0743.JPG" alt="キットのイメージ"></div>
           <div class="kit-img" style="aspect-ratio: 3/2;"><img src="images/IMG_9052.png" alt="キット内容"></div>
+          <!-- 動画埋め込み（リピート再生） -->
+          <div class="kit-video" style="margin-top:24px; text-align:center;">
+            <iframe width="320" height="568" src="https://www.youtube.com/embed/tUWVcIiuI64?autoplay=1&loop=1&playlist=tUWVcIiuI64&mute=1" title="YouTube video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="border-radius:18px; box-shadow:0 6px 24px rgba(60,40,20,.07);"></iframe>
+            <div style="font-size:0.95em; color:var(--muted); margin-top:8px;">動画はリピート再生されます</div>
+          </div>
         </div>
       </div>
     </div>
